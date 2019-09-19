@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'edsacSim'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 12
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class' : 'Application'
+        )
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {}
